@@ -18,6 +18,8 @@ const pages = path.join(__dirname,"./FrontEnd/page")    // html file path
 app.use(express.static(csspath))
 app.set("pages",pages)
 
+// global.templatePath = path.join(__dirname,"FrontEnd")   // define globle path 
+
 // ----------------------------------------------
 app.listen(port,()=>{
     console.log(`this server is runing on ${port}`);
